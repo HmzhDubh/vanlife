@@ -4,8 +4,7 @@ import Footer from "./Footer.jsx"
 export default function About(){
 
     return(
-        <>
-        <Header />
+
         <section className="about-hero">
             <img src="https://github.com/scrimba/learn-react-router-6/blob/main/01%20-%20Introduction%20to%20React%20Router/10%20-%20Initial%20Deploy%20to%20Netlify/assets/images/about-hero.png?raw=true" alt="about image"></img>
             <div className="p-10">
@@ -23,9 +22,6 @@ export default function About(){
             </div>
             </div>
         </section>
-        <Footer />
-
-</>
     )
 
 }
