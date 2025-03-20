@@ -1,0 +1,10 @@
+.home {
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("https://github.com/scrimba/learn-react-router-6/blob/main/01%20-%20Introduction%20to%20React%20Router/10%20-%20Initial%20Deploy%20to%20Netlify/assets/images/home-hero.png?raw=true") no-repeat center center;
+        background-size: cover;
+        min-height: 510px;
+
+        color: white;
+        padding: 45px 23px;
+
+}
