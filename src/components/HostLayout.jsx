@@ -1,6 +1,4 @@
 import React from "react"
-import Header from './Header'
-import Footer from './Footer'
 import { NavLink, Outlet } from "react-router-dom"
 export default function HostLayout() {
     return (

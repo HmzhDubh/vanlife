@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom"
-import stats from './assets/incomeStatistics.svg'
+import stats from '../../assets/incomeStatistics.svg'
 export default function Income() {
     return (
         <div className="ps-10">

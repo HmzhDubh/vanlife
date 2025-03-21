@@ -1,23 +1,25 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import './index.css'
+
 import App from './App.jsx'
 import About from './About.jsx'
-import Vans from './Vans.jsx'
-import VanDetails from './VanDetails.jsx'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Layout from './Layout.jsx'
-import HostDashboard from './HostDashboard.jsx'
-import Income from './Income.jsx'
-import Reviews from './Reviews.jsx'
-import HostVans from './HostVans.jsx'
-import HostLayout from './HostLayout.jsx'
-import HostVanDetails from './HostVanDetails.jsx'
-import HostVanInfo from './HostVanInfo.jsx'
-import HostVanPricing from './HostVanPricing.jsx'
-import HostVanPhotos from './HostVanPhotos.jsx'
+
+import Layout from './components/Layout.jsx'
+import HostLayout from './components/HostLayout.jsx'
+
+import Vans from './pages/vans/Vans.jsx'
+import VanDetails from './pages/vans/VanDetails.jsx'
+
+import HostDashboard from './pages/host/HostDashboard.jsx'
+import Income from './pages/host/Income.jsx'
+import Reviews from './pages/host/Reviews.jsx'
+import HostVans from './pages/host/HostVans.jsx'
+import HostVanDetails from './pages/host/HostVanDetails.jsx'
+import HostVanInfo from './pages/host/HostVanInfo.jsx'
+import HostVanPricing from './pages/host/HostVanPricing.jsx'
+import HostVanPhotos from './pages/host/HostVanPhotos.jsx'
+
 import "./server"
 
 createRoot(document.getElementById('root')).render(

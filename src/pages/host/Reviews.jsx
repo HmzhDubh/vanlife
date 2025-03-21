@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom"
-import rates from "./assets/rates.svg"
-import star from "./assets/star.svg"
+import rates from "../../assets/rates.svg"
+import star from "../../assets/star.svg"
 
 export default function Reviews() {
     return (

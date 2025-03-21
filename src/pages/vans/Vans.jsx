@@ -1,5 +1,5 @@
-import Header from "./Header.jsx"
-import Footer from "./Footer.jsx"
+import Header from "../../components/Header.jsx"
+import Footer from "../../components/Footer.jsx"
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 export default function Vans(){
@@ -15,7 +15,7 @@ export default function Vans(){
     const vansElements = vans.map( (van) => {
         return(
             <Link to={`/vans/${van.id}`}>
-            <div className="flex flex-col" key={van.id} className="van-card">
+            <div className="flex flex-col" key={van.id}>
                 <img className="w-64 h-64 rounded " src={van.imageUrl} alt={van.id}></img>
                 <div className="flex justify-between mt-3 mb-3 text-xl font-semibold">
                     <h1 className="">{van.name}</h1>
