@@ -15,13 +15,16 @@ export default function Vans(){
     const vansElements = vans.map( (van) => {
         return(
             <Link to={`/vans/${van.id}`}>
-            <div className="flex flex-col " key={van.id} className="van-card">
-                <img className="w-48 h-48 rounded " src={van.imageUrl} alt={van.id}></img>
-                <div className="flex justify-between mt-3 mb-3 font-semibold">
-                    <h1>{van.name}</h1>
-                    <h1>${van.price}<span className="font-medium text-sm">/day</span></h1>
+            <div className="flex flex-col" key={van.id} className="van-card">
+                <img className="w-64 h-64 rounded " src={van.imageUrl} alt={van.id}></img>
+                <div className="flex justify-between mt-3 mb-3 text-xl font-semibold">
+                    <h1 className="">{van.name}</h1>
+                    <h1 className="flex flex-col">
+                        ${van.price}
+                        <span className="font-medium text-sm">/day</span>
+                    </h1>
                 </div>
-                <span className="bg-yellow-100 p-1 ps-5 pe-5 rounded capitalize">{van.type}</span>
+                <span className="bg-yellow-100 p-2 ps-5 pe-5 rounded capitalize">{van.type}</span>
             </div>
             </Link>
         )
@@ -29,13 +32,13 @@ export default function Vans(){
     return(
         <div>
 
-            <div className="p-7">
+            <div className="p-6">
                 <h1 className="text-3xl">Explore our vans options</h1>
                 <div className="flex justify-between items-center mt-5">
                     <div className="flex gap-5">
-                        <span style={{backgroundColor: "#FFEAD0"}} className="p-1 ps-5 pe-5 rounded">Simple</span>
-                        <span style={{backgroundColor: "#FFEAD0"}} className="bg-yellow-100 p-1 ps-5 pe-5 rounded">Luxury</span>
-                        <span style={{backgroundColor: "#FFEAD0"}} className="bg-yellow-100 p-1 ps-5 pe-5 rounded">Rugged</span>
+                        <span style={{backgroundColor: "#FFEAD0"}} className="p-2 ps-5 pe-5 rounded">Simple</span>
+                        <span style={{backgroundColor: "#FFEAD0"}} className="bg-yellow-100 p-2 ps-5 pe-5 rounded">Luxury</span>
+                        <span style={{backgroundColor: "#FFEAD0"}} className="bg-yellow-100 p-2 ps-5 pe-5 rounded">Rugged</span>
                     </div>
                     <div className="text-end">
                         <span className="underline">Clear filters</span>
